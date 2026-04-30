@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AKSA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AKSA</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li>
+                    <button id="darkModeToggle" class="dark-mode-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Beberapa proyek yang pernah saya kerjakan. Klik untuk detailnya.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-id="1">
+                <img src="https://picsum.photos/600/400?random=3" alt="Website E-commerce">
+                <div class="portfolio-overlay">
+                    <h3>Website E-commerce</h3>
+                    <p>React, Node.js, MongoDB</p>
+                    <button class="btn-small view-details" data-id="1">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-id="2">
+                <img src="https://picsum.photos/600/400?random=4" alt="Aplikasi Mobile Kasir">
+                <div class="portfolio-overlay">
+                    <h3>Aplikasi Mobile Kasir</h3>
+                    <p>Flutter, Firebase</p>
+                    <button class="btn-small view-details" data-id="2">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-id="3">
+                <img src="https://picsum.photos/600/400?random=5" alt="Landing Page Startup">
+                <div class="portfolio-overlay">
+                    <h3>Landing Page Startup</h3>
+                    <p>HTML, CSS, JS</p>
+                    <button class="btn-small view-details" data-id="3">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item" data-id="4">
+                <img src="https://picsum.photos/600/400?random=7" alt="Sistem Manajemen Inventaris">
+                <div class="portfolio-overlay">
+                    <h3>Sistem Manajemen Inventaris</h3>
+                    <p>Laravel, MySQL</p>
+                    <button class="btn-small view-details" data-id="4">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item" data-id="5">
+                <img src="https://picsum.photos/600/400?random=8" alt="Aplikasi Cuaca">
+                <div class="portfolio-overlay">
+                    <h3>Aplikasi Cuaca</h3>
+                    <p>Vue.js, OpenWeather API</p>
+                    <button class="btn-small view-details" data-id="5">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item" data-id="6">
+                <img src="https://picsum.photos/600/400?random=9" alt="Company Profile">
+                <div class="portfolio-overlay">
+                    <h3>Company Profile</h3>
+                    <p>Next.js, Tailwind</p>
+                    <button class="btn-small view-details" data-id="6">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODAL PORTFOLIO DETAIL -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Project Image">
+                </div>
+                
+                <div class="modal-details">
+                    <h2 id="modalTitle">Judul Proyek</h2>
+                    
+                    <div class="modal-tags" id="modalTags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    
+                    <div class="modal-description" id="modalDescription">
+                        <p>Deskripsi proyek akan muncul di sini.</p>
+                    </div>
+                    
+                    <div class="modal-features" id="modalFeatures">
+                        <h4>Fitur Utama:</h4>
+                        <ul>
+                            <li>Fitur 1</li>
+                            <li>Fitur 2</li>
+                            <li>Fitur 3</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="#" id="modalLiveDemo" class="btn-modal" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" id="modalGithub" class="btn-modal btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 AKSA (Arsip Raksasa). All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ferrdxd_"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
