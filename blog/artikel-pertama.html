@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memulai Petualangan Digital - AKSA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">AKSA</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">Tentang</a></li>
+                <li><a href="../contact.html">Kontak</a></li>
+                <li>
+                    <button id="darkModeToggle" class="dark-mode-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="reading-progress-container" id="progressContainer">
+        <div class="reading-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Konten Artikel -->
+    <main class="container single-post">
+        <!-- Tombol Kembali -->
+        <a href="../index.html" class="back-to-blog">
+            <i class="fas fa-arrow-left"></i> Kembali ke Blog
+        </a>
+
+        <article>
+            <header class="post-header">
+                <h1>Memulai Petualangan Digital</h1>
+                <div class="post-meta">
+                    <span><i class="far fa-calendar-alt"></i> 19 Februari 2026</span>
+                    <span><i class="far fa-folder"></i> <a href="#">Teknologi</a></span>
+                    <span><i class="far fa-clock"></i> 5 menit membaca</span>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <img src="https://picsum.photos/800/400?random=1" alt="Hero Image">
+
+                <p>Ini adalah paragraf pembuka dari artikel pertama. Menceritakan bagaimana ide untuk membuat arsip raksasa ini muncul. Dimulai dari kegelisahan karena sering lupa dengan proyek-proyek kecil yang sudah dibuat. Akhirnya, saya memutuskan untuk menulis semuanya di sini.</p>
+
+                <h2>Mengapa Harus Menulis?</h2>
+                <p>Menulis membantu kita berpikir lebih jernih. Dengan menulis, ide-ide abstrak menjadi konkret. Saya percaya bahwa <em>arsip raksasa</em> ini akan menjadi dokumentasi perjalanan saya di dunia digital.</p>
+
+                <blockquote>
+                    <p>"Menulis adalah cara terbaik untuk berbicara tanpa diganggu." - Jules Renard</p>
+                </blockquote>
+
+                <h3>Apa yang Akan Dibahas?</h3>
+                <p>Di blog ini, saya akan membahas:</p>
+                <ul>
+                    <li>Tips dan trik seputar web development</li>
+                    <li>Review tools dan teknologi terbaru</li>
+                    <li>Cerita di balik proyek-proyek saya</li>
+                    <li>Opini tentang industri teknologi</li>
+                </ul>
+
+                <h2>Contoh Kode</h2>
+                <p>Kadang saya juga akan berbagi cuplikan kode seperti ini:</p>
+
+                <pre><code>// Fungsi sederhana untuk menyapa
+function sapa(nama) {
+    return `Halo, ${nama}! Selamat datang di AKSA.`;
+}
+
+console.log(sapa('pengunjung'));</code></pre>
+
+                <h2>Tabel Perbandingan Tools</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tools</th>
+                            <th>Kelebihan</th>
+                            <th>Kekurangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VS Code</td>
+                            <td>Ringan, banyak ekstensi</td>
+                            <td>Kadang berat kalau banyak plugin</td>
+                        </tr>
+                        <tr>
+                            <td>Sublime Text</td>
+                            <td>Super cepat</td>
+                            <td>Kurang fitur bawaan</td>
+                        </tr>
+                        <tr>
+                            <td>WebStorm</td>
+                            <td>Fitur lengkap</td>
+                            <td>Berbayar</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Kesimpulannya, memulai petualangan digital ini adalah keputusan terbaik. Semoga tulisan-tulisan di sini bisa bermanfaat untuk siapa saja yang membacanya.</p>
+            </div>
+        </article>
+
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <h3>Artikel Terkait</h3>
+            <div class="related-grid">
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Related 1">
+                    <h4>Review: Framework CSS 2025</h4>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 10 Feb 2026</span>
+                    </div>
+                </a>
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Related 2">
+                    <h4>Tips Meningkatkan Produktivitas Coding</h4>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 5 Feb 2026</span>
+                    </div>
+                </a>
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Related 3">
+                    <h4>Memahami Konsep Dasar JavaScript</h4>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 28 Jan 2026</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Komentar -->
+        <section class="comments-section">
+            <h3>Komentar (2)</h3>
+            
+            <div class="comment">
+                <div class="comment-avatar">
+                    <img src="https://picsum.photos/60/60?random=5" alt="Avatar">
+                </div>
+                <div class="comment-content">
+                    <div class="comment-author">Budi Santoso</div>
+                    <div class="comment-date">19 Februari 2026 • 10:30</div>
+                    <div class="comment-text">
+                        <p>Artikelnya bagus banget! Sangat menginspirasi untuk mulai menulis juga.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar">
+                    <img src="https://picsum.photos/60/60?random=6" alt="Avatar">
+                </div>
+                <div class="comment-content">
+                    <div class="comment-author">Siti Aminah</div>
+                    <div class="comment-date">19 Februari 2026 • 14:15</div>
+                    <div class="comment-text">
+                        <p>Setuju banget sama quote dari Jules Renard. Semangat terus nulisnya, AKSA!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Komentar -->
+            <div class="comment-form">
+                <h4>Tinggalkan Komentar</h4>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="commentName">Nama</label>
+                        <input type="text" id="commentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentEmail">Email</label>
+                        <input type="email" id="commentEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentText">Komentar</label>
+                        <textarea id="commentText" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Komentar</button>
+                </form>
+                <div id="commentFormStatus" class="form-status" style="margin-top: 1rem;"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 AKSA (Arsip Raksasa). All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ferrdxd_"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Script tambahan untuk progress bar membaca
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Script untuk form komentar (simulasi)
+        const commentForm = document.getElementById('commentForm');
+        const commentStatus = document.getElementById('commentFormStatus');
+        
+        if (commentForm) {
+            commentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                commentStatus.textContent = 'Komentar berhasil dikirim (simulasi)';
+                commentStatus.className = 'form-status success';
+                commentForm.reset();
+                
+                setTimeout(() => {
+                    commentStatus.textContent = '';
+                    commentStatus.className = 'form-status';
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
